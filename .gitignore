@@ -2,8 +2,9 @@
 *.bbl
 *.bcf
 *.blg
-*.fdb_latemk
+*.fdb_latexmk
 *.fls
 *.log
 *.run.xml
 *.synctex.gz
+PHIL20053_Essay_questions
