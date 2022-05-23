@@ -10,11 +10,10 @@
 \usepackage[british]{babel}
 \usepackage{ragged2e}
 \usepackage[indentfirst=false]{quoting}
-\usepackage[notes,backend=biber,short,ibidtracker=constrict,pagetracker=true]{biblatex-chicago}
+\usepackage[backend=biber,style=authoryear-ibid,pagetracker=true,autocite=footnote,ibidpage=true,loccittracker=context,firstinits=true]{biblatex}
 
 % Bibliography
 \bibliography{main_references}
-\bibliographystyle{biblatex-chicago}
 
 % Commands
 \newcommand{\customcite}[1]{\citeauthor{#1}, \citeyear{#1}}
@@ -37,26 +36,6 @@ reference to two or more thinkers.}
 
 \sloppy
 
-\section{Section A}%
-\label{sec:secA}
-
-
-\section{Section B}%
-\label{sec:secB}
-
-\subsubsection{Subsection A}%
-\label{ssub:subA}
-
-\subsubsection{Subsection B}%
-\label{ssub:subB}
-
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.\autocite{Cushing1998}
-
-
-\section{Conclusion}%
-\label{sec:conclusion}
-
-% A philosophical argument format
 \begingroup
 \begin{midtext}
     \begin{enumerate}[label=(\textbf{F})]
@@ -71,6 +50,11 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
     \end{enumerate}
 \end{midtext}
 \endgroup
-%
+
+
+
+\section{Conclusion}%
+\label{sec:conclusion}
+
 \printbibliography % chktex 1
 \end{document}

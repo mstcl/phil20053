@@ -4,17 +4,17 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{newpxtext}
+\usepackage{newpxmath}
 \usepackage[margin=1.3in]{geometry}
 \usepackage{csquotes}
 \usepackage{enumitem}
 \usepackage[british]{babel}
 \usepackage{ragged2e}
 \usepackage[indentfirst=false]{quoting}
-\usepackage[notes,backend=biber,short,ibidtracker=constrict,pagetracker=true]{biblatex-chicago}
+\usepackage[backend=biber,style=authoryear-ibid,pagetracker=true,autocite=footnote,ibidpage=true,loccittracker=context,firstinits=true]{biblatex}
 
 % Bibliography
 \bibliography{main_references}
-\bibliographystyle{biblatex-chicago}
 
 % Commands
 \newcommand{\customcite}[1]{\citeauthor{#1}, \citeyear{#1}}
@@ -33,48 +33,303 @@
 % Content
 \begin{document}
 \maketitle
+
+\section{Thesis}%
+\label{sec:thesis}
+
+I will argue that from the emancipation of Aristotelian natural
+motions, there is a loss of metaphysical hierarchy and bias in
+the conception of space (and thus cosmology), and at the same
+time took part in the eventual overthrowing of the Peripatetic
+methodology and doctrine in philosophical thinking and reasoning
+at the time. This leads to a freer mode of thinking for the
+concept of space, which helped (re)-introduce mathematical and
+mechanistic elements as part of a revival of the Platonic and
+Atomist methodology.
+
+\begingroup
+\begin{midtext}
+	\begin{enumerate}[label=(\textbf{L})\ ]
+		\item\label{Argument}
+		\begin{enumerate}[label=(P\arabic*)]
+			\item There is a loss of long-standing metaphysical bias and hierarchy
+			      in the conception of space.
+			\item This meant a gain in freedom in establishing metaphysical
+			      foundations in theories of space.
+			\item A new methodology could develop (and did develop) out of this
+			      freedom.
+
+			      \moveright.6in\vbox{\hrule width 5in}
+
+			\item[(C)] My thesis.\label{item:L_conclusion}
+		\end{enumerate}
+	\end{enumerate}
+\end{midtext}
+\endgroup
+
 \section{Introduction}%
 \label{sec:introduction}
 
 \sloppy
 
-\section{Section A}%
-\label{sec:secA}
+\section{Aristotelian natural motions}%
+\label{sec:aristotelian_natural_motions}
 
-\section{Section B}%
-\label{sec:secB}
+In Aristotle's \textit{Physics}, natural motions were those
+which bodies exhibit naturally, without any ``constant action of
+an external agent''\autocite[18]{Cushing1998}. To determine
+natural motions, according to Aristotle, one considers the
+composition and proportion of the four terrestrial basic
+elements (earth, air, fire, and water). Each element had its own
+natural place to which they move with their natural motions. The
+heavier an element is, the closer it is to the centre of the
+universe, while the lighter an element is, the natural place is
+found closer to the edge of the universe (Aristotle's universe
+was finite). Earth's natural place is at the centre, as it is
+the heaviest element, so its natural motion is downwards; while
+for fire, it is upwards. Therefore, all terrestrial elements
+move in vertical, straight lines. The heavenly element, aether,
+had its natural motion associated with uniform circular motion,
+because the heavens must be eternal and perfect.
 
-\subsubsection{Subsection A}%
-\label{ssub:subA}
+Aristotelian philosophy was endowed with ontological explanation
+(in comparison to Atomists' physical character or Platonists'
+mathematics)\autocite[69]{Jammer1954} and full of dual concepts,
+notably potentiality-actuality, matter-form. This is central to
+understand why bodies move towards their natural place. Once
+reached, bodies are in full actuality and remain there--- while
+moving towards their natural place, they still have potentiality
+and must continue to move. In \textit{De Caelo}, the universe is
+an organism, not in the literal modern sense, but as a way to
+explain that because all bodies have a goal (the final cause, or
+\textit{telos}, one of the four Aristotelian causes) and all
+bodies tend towards their natural goal, there must be inherent
+``directional tendencies'' for all matter in the universe.
 
-\subsubsection{Subsection B}%
-\label{ssub:subB}
+\section{Post-Copernican rejection of natural motions}%
+\label{sec:post_copernican_rejection_of_natural_motions}
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-diam nonumy eirmod tempor invidunt ut labore et dolore magna
-aliquyam erat, sed diam voluptua. At vero eos et accusam et
-justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-takimata sanctus est Lorem ipsum dolor sit
-amet.\autocite{Cushing1998}
+Aristotle's metaphysics and physics posed many problems and both
+pre- and post-Copernican figures have extensively dissected and
+attempted to solve these problems. With this in mind, I can only
+discuss one notable argument that lead to arguably the most
+compelling rejection of natural motion, an argument put forth by
+Galileo. That is to say, what Galileo rejected was more subtle
+than the entire Aristotelian concept of natural motions. He
+wanted to challenge the dogma that a body will fall with a rate
+proportional to how heavy it is\autocite[81]{Cushing1998}, i.e.\
+much earth it comprises (I use the term \textit{weight}
+henceforth to denote heaviness). The argument is laid out as
+follows:
+
+A lighter body $m$ falls with velocity $v$, while a heavier body
+$M$ falls with velocity $V$. The connected body $\left(m +
+	M\right)$ falls with velocity $v^\prime$. Now, here are the
+inequalities entailed by Aristotle's physics: $m < M $ (with
+respect to their weights), so $v < V$. Consider the joint
+body---since $m$ contains less earth, it should retard $M$, thus
+$v < v^\prime < V$ (conclusion $A$). At the same time, $\left(m
+	+ M\right) > M$, so it follows that $v < V < v^\prime$
+(conclusion $B$). But $A$ and $B$ contradict \textit{a priori},
+except in the case where $v = V = v^\prime$ (conclusion $C$).
+However, Aristotle's physics maintained as fact that $v < V$,
+and as a result, Galileo's argument, a \textit{reductio ad
+	absurdum}, shows that one must refute Aristotle's statement
+stated above via sound mathematical
+deduction\autocite[82]{Cushing1998}.
+
+Consequently, if a body's heaviness ($W$) does not affect the
+degree of tendency ($s$) it has to reach its \textit{telos},
+then this is a result of faulty metaphysics on Aristotle's part.
+The variant between $W$ and $s$ does not exist, so a body does
+not fall (faster) because it has (more) earth, i.e.\ the
+addition of earth $m$ does not result in increased rate of fall.
+The metaphysical implication of this refutation meant that
+Aristotelian natural motions and places would have to be given
+up.
+
+While this argument is compelling on its own, Galileo,
+influenced by ``impetus theory'' of Philoponus, also developed a
+system to describe the kinematics of projectile motion that also
+stripped away the \textit{organismic} element in which natural
+motions found its roots, and furthered the necessity to move
+away from this Aristotelian doctrine. I cannot go into depth,
+but consulting the critique from Philoponus alone; the cause of
+natural motion is found not within space, but by the agent to
+the body, and thus inherent in the moving body (which ``shows a
+remarkable resemblance to the gravity suggested by
+Copernicus''\autocite[57]{Jammer1954}). EXPAND THIS?
+
+The acceptance of the arguments above meant the immediate loss
+of authority in Peripatetic doctrine. For not only was his
+physics challenged, but his metaphysics has been brought under
+scrutiny; how can the role of \textit{telos} be emphasised if
+matter, being composed by smaller earth elements which all
+individually express the urge to seek its natural place, no
+longer varies with the rate taken to reach its goal? Many before
+him took his philosophy as dogma, and it took many attempts to
+overthrow this long-standing tradition which brought along with
+it deep metaphysical bias and hierarchy. This break in tradition
+is clearly seen by the theories which came after; the
+reintroduction of Platonic emphasis on more rigorous mathematics
+in Galilean, Keplerian, Cartesian, Newtonian, Leibnizian natural
+philosophy and metaphysics, alongside the many Italian
+Renaissance scholars who influenced these figures. While certain
+traces of Aristotelian thought remain in the theories expounded
+by these contemporaries, for example, the unchallenged survival
+of uniform circular orbits in Copernican and Galilean cosmology
+(and Cartesian vortices), the sweeping ontological principles
+and distinctive elements Aristotle put forth as part of his
+metaphysics and physics were no longer upheld as dogma. Again,
+consider cosmological models. If the sun was considered as a
+ball of fire, and any contemporary of Aristotle, say Newton, who
+published their sun-centred world system without the burden to
+explain why a heavenly body, let alone one considered a ball of
+fire, could be placed at the centre of the universe, then such a
+burden to stay faithful to Aristotle did not exist. I hope to
+have shown that there is a loss of Peripatetic authority as a
+partial result of natural motions (and its metaphysical
+ontology) being refuted.
+
+% It took until Kepler's time to finally remove uniform circular
+% motion of astronomical orbits. From Kepler's first law, all
+% bodies in orbit with the Sun follow an elliptical path, not a
+% circular one. I cannot find persuasive elements in Kepler's
+% arguments, for his ontology and metaphysics were not
+% revolutionary in that they contain\ldots
+
+\section{A shift in methodology}%
+\label{sec:a_shift_in_methodology}
+
+I shall argue now that by rejecting its metaphysical grounding,
+the departure of natural motions meant space is now open to new
+physical and metaphysical foundations, and a gain in more solid
+methodology was needed for such tasks, and indeed such a gain
+was observed. However, I wish to exercise my attempt carefully
+as to avoid sweeping generalisations. First, this gain in new
+methodology is not the same as but definitely affected by the
+loss of long-standing bias and hierarchy in the conception of
+space which stemmed from Aristotelian metaphysics demonstrated
+in
+Section~\ref{sec:post_copernican_rejection_of_natural_motions}.
+The reason why these are not the same arises from the fact that
+not long before the modern physics we know of today, science and
+theology were intertwined (even Newton's conception of space was
+his only religiously-biased one), therefore any figure
+post-Copernican who proposed new physical theories in place of
+natural motions will replace its metaphysical groundings with
+something else. Now, whether this ``something else'' shows a
+different methodological practice (and a more effective one)
+usually comes unjustly with the unavoidable input of hindsight.
+Rather, it is a careful analysis of historical records at the
+time which can only decide whether signs of modern scientific
+methodology were shown (indeed, even this requires some form of
+hindsight). Let me explain using cosmological world systems as
+an example.
+
+Aristotle viewed space and matter as inextricably linked, since
+natural places differ by virtue of the basic elements, so earth,
+being the heaviest, found its natural place at the centre of the
+universe, and the natural motions of the terrestrial elements
+took place within the first sphere, the sublunary region. Beyond
+this lied the celestial sphere, the planets and stars were
+considered heavenly bodies, their element being aether, and
+their orbits around earth uniform and circular. Mathematicians
+whose constructions stayed faithfully close to this Aristotelian
+two-sphere model had to employ many workarounds in order to fit
+observational data. These workarounds are called \textit{ad hoc}
+devices, a pejorative term given to parts of a model introduced
+in order to fit observational data\autocite[22]{Cushing1998}.
+
+Consider the Ptolemaic world system: it was observed that
+planets occasional orbit backwards before returning to their
+usual direction (retrograde motion), and that they appear to
+vary in brightness. To explain away these troublesome phenomena,
+Ptolemy introduced epicycles (smaller circles which travel in a
+bigger circle) to account for retrograde motion, the eccentric
+(the centre of the bigger circle) and the equant (the point of
+reference wherein the epicycles appear
+uniform)\autocite[51]{Cushing1998}. Copernicus, while known for
+setting the stage for the heliocentric model (sun-centred) again
+after previous dismissals, also employed just as many circles as
+Ptolemy did\autocite[65]{Cushing1998}, and while there were
+fewer \textit{ad hoc} devices at play, on the criterion of
+economy and simplicity, it was not a much better construction
+than Ptolemy's. Copernicus still modeled his theory to fit
+observational data\autocite[67]{Cushing1998}, and any data taken
+were not very accurate either, and as mentioned in
+Section~\ref{sec:post_copernican_rejection_of_natural_motions},
+his (and Galileo's) theory also retained Aristotelian circular
+motion. At the time, on unbiased ground, it was difficult to
+decide between the two rivalling models, due to observations
+being limited to the naked eye, to see whether such a
+construction \textit{really} explains the actual motion of
+bodies. The discrimination against the Copernican model stemmed
+from earth-centred bias of authority at the time which still
+held onto its Aristotelian doctrines. Therefore, to completely
+remain unbiased to the hindsight of scientific modernity, any
+model which, no matter how close it is to the present accepted
+theory, cannot show stronger methodological background if it was
+arrived at with \textit{ad hoc} devices.
+
+On the other hand, a new methodology was recorded. The invention
+of the telescope lead Galileo to make observations which showed
+many problems with the Ptolemaic model. As well as not showing
+bias for a Copernican model\autocite[142]{Cushing1998}, he
+argued with evidence and clear reasoning why such a model should
+be preferred. Merits were to be given to Galileo, who argued for
+the ``superiority of reason and
+observation''\autocite[141]{Cushing1998} and demonstrated a
+methodology different to those who came before him. Note that as
+part of the series of arguments against Aristotelian straight
+natural motion, experiments with objects rolling down inclined
+planes were performed and the method detailed. Kepler, equipped
+with Brahe's data, also arrived at his First Law, where bodies
+now travel on elliptical paths, and this signified the death of
+all Aristotelian natural motions. Therefore, with historical
+evidence, I put forth my claim that new theories of motion and
+space proposed in place of Aristotle's natural motions and
+places lead to a different and better methodology.
+
+% Post-Galileo or even post-Philoponus, even without metaphysical
+% grounding for natural motions, the historical climate perhaps
+% played a role in delaying a more thoughtful analysis of orbital
+% motions. If straight line vertical natural motion can be easily
+% demonstrated as flawed, what justified the circular national
+% motion of bodies in the celestial sphere?
+
+% The inevitable role of hindsight comes into play here; because
+% modern astronomy now has one triumphant model, which is
+% different from Ptolemy's and Copernicus', it seems a natural
+% move \textit{prima facie} to consider epicycles and the rest as
+% \textit{ad hoc} mathematical devices. Parts of theories that
+% still remain in modern physics (sun as centre) take precedence
+% and are considered guilt-free as a creative or clever
+% anticipation, even though they were decided perhaps for
+% completely different reasons, with few to none overlapping
+% justification.
+
+% However,
+
+% Keeping in mind that it is ``overly
+% simplistic''\autocite[76]{Cushing1998} to view there was no
+% challenge to the dogmatic Peripatetic tradition prior to figures
+% of the Renaissance (Copernicus and his contemporaries), I
+% discuss the theories of these latter figures only due to their
+% significance in driving the momentum of the Copernican
+% revolution, not because they were the first to propose such
+% ideas.
+
+% Aristotelian space is anisotropic, i.e.\ there is a
+% differentiation between up and down due to the natural motions
+% of the basic elements. However, the rejection of this concept
+% meant space can now be isotropic---the same in all directions.
+% If space is to remain anisotropic, there must a set of more
+% convincing metaphysical laws that necessitate the distinction
+% and hierarchy of directions.
 
 \section{Conclusion}%
 \label{sec:conclusion}
 
-% A philosophical argument format
-\begingroup
-\begin{midtext}
-	\begin{enumerate}[label=(\textbf{F})]
-		\item\label{RDT}\begin{enumerate}[label=(\arabic*)]
-			\item Premise\label{item:1}
-			\item Premise\label{item:2}
-
-			      \moveright.6in\vbox{\hrule width 3in}
-
-			\item Conclusion\label{item:3}
-		\end{enumerate}
-	\end{enumerate}
-\end{midtext}
-\endgroup
-%
 \printbibliography % chktex 1
 \end{document}
